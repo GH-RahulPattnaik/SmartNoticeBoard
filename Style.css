@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(0, 0, 0); */
+  }
+
+  /* HEADER */
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border: solid black;
+    }
+
+    #header-content {
+    display: flex;
+    align-items: center;
+    }
+
+    #logo {
+    width: 72px;
+    height: 72px;
+    margin-right: 100px;
+    }
+
+    #title {
+    margin: 0;
+    }
+
+    /* #subtitle {
+    font-size: 12px;
+    } */
+    
+    /* THOUGHTS OF THE DAY */
+
+    #thoughts-container {
+        width: 99.5%;
+        margin: 0 auto;
+        border: solid black;
+      }
+      
+      h4 {
+        text-align: center;
+        /* background-color: black; */
+        /* color: white; */
+      }
+      
+      /* #thoughts-list {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        
+      } */
+      
+      #thoughts-list li {
+        display: inline-block;
+        padding: 0px;
+      }
+      
+      @keyframes scrolling-thoughts {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    
+
+      /* SLIDES OF NOTICES AND UPCOMING EVENTS */
+
+      #slider {
+        
+        background-color: #333;
+        color: #fff;
+        height: 403px;
+        width: 100%;
+        position: relative;
+      }
+
+      #slider h3{
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      
+      /* AUTO SLIDE */
+      .slides {
+        position: absolute;
+        top: 22px;
+        left: 15%;
+        width: 70%;
+        height: 380px;
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      
+      /* MANUAL SLIDE */
+      /* #left-arrow, #right-arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        font-size: 36px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 16px;
+        border-radius: 50%;
+      }
+      
+      #left-arrow {
+        left: 0;
+      }
+      
+      #right-arrow {
+        right: 0;
+      } */
+
+      /* HEADLINES */
+
+
+      .headline{
+        display: inline-block;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        /* border: solid rgb(0, 0, 0); */
+        /* border-radius: 25px; */
+      }
+      .headline h5{
+        position: relative;
+        top: 2px;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        /* border-radius: 5px; */
+        width: 100%;
+      }
+      .headline p{
+        position: relative;
+        /* background-color: rgb(0, 0, 0);
+        color: white; */
+        top: 18px;
+        height: 23px;
+        width: 100%;
+        /* left: 300px; */
+      }
+
+      /* FOOTER */
+
+      footer{
+        position: absolute;
+        bottom: 0;
+        background-color: rgb(0, 0, 0);
+        color: rgb(245, 0, 0);
+        text-align: center;
+      }      

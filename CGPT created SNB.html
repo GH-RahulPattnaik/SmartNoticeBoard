@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Notice Board</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+  <div id="header-content">
+    <img src="logo.jpg" id="logo" alt="Gandhi Institute for Education and Technology logo">
+    <h1 id="title"><b>Gandhi Institute for Education and Technology -<br></b></h1>
+    <h1 id="subtitle">- Baniatangi, Khordha - 752060</h1>
+  </div>
+  </header>
+
+  <!-- THOUGHTS OF THE DAY -->
+  <div id="thoughts-container">
+    <h4>Thoughts of the Day</h4>
+    <marquee id="thoughts-list" scrollamount = "4">
+      <!-- <li>Be the change you wish to see in the world.</li> -->
+      <li>The weak can never forgive. Forgiveness is the attribute of the strong.</li>
+      <!-- <li>An eye for an eye will only make the whole world blind.</li> -->
+    </marquee>
+  </div>
+
+  <!-- SLIDE OF NOTICE AND UPCOMING EVENTS -->
+  <div id="slider">
+    <h3>Notices and Upcoming Events</h3>
+    <img src="image1.jpg" class="slides" alt="Image 1">
+    <img src="image2.jpg" class="slides" alt="Image 2">
+    <img src="image3.jpg" class="slides" alt="Image 3">
+    <img src="image4.jpg" class="slides" alt="Image 4">
+  </div>
+  
+  <!-- SLIDE ARROWS -->
+  <!-- <div id="left-arrow" onclick="previousSlide()">&#10094;</div>
+  <div id="right-arrow" onclick="nextSlide()">&#10095;</div> -->
+
+  <!-- HEADLINES -->
+    <div class="headline"><h5>HEADLINES</h5><p><marquee scrollamount = "4" >Gandhi Institute for Education & Technology Breaking News</marquee></p></div><br>
+  
+  <!-- FOOTER -->
+  <footer><marquee scrollamount = "6">&copy; Team A - EACE Department - Abhinash Behera, Archita Dhal, Ashis Kumar Nayak,Kiran Kumar Majhi, Paresh Mahalik, Rahul Pattnaik, Rajeswaree Priyadarshini, Rudra Prakash Mahalik, Satyashre Patra, Sougat Das, Soumya Ranjan Behera, Soumyashree Behera, Shivangi Kumari, Subhadra Majhi, Tushar Ranjan Mahalik </marquee></footer>
+
+
+  <!-- JAVASCRIPTS -->
+  
+<script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.opacity = 1;
+  setTimeout(showSlides, 5000);
+}
+
+function previousSlide() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+  }
+  slideIndex--;
+  if (slideIndex < 1) {slideIndex = slides.length}
+  slides[slideIndex-1].style.opacity = 1;
+}
+
+function nextSlide() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.opacity = 1;
+}
+
+  </script>
+</body>
+</html>
